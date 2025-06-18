@@ -1,10 +1,15 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 
-function generateQiMenData() {
+// __dirname w ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default function generateQiMenData() {
   const now = new Date();
 
-  // Tu powinien być algorytm Qi Men Dun Jia
   const data = {
     generatedAt: now.toISOString(),
     cells: Array(9)
@@ -22,5 +27,3 @@ function generateQiMenData() {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf8");
   console.log("Zapisano nowe dane QiMen.");
 }
-
-module.exports = generateQiMenData;

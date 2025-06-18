@@ -1,7 +1,15 @@
-const express = require("express");
-const cors = require("cors");
-const fs = require("fs");
-const path = require("path");
+import express from "express";
+import cors from "cors";
+import fs from "fs";
+import path from "path";
+import cron from "node-cron";
+import generateQiMenData from "./cron/qimenGenerator.js";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+// __dirname w ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 app.use(cors());
@@ -20,13 +28,11 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`QiMen backend działa na porcie ${PORT}`);
 });
-const cron = require("node-cron");
-const generateQiMenData = require("./cron/qimenGenerator");
 
-// Co 2 godziny: 0 */2 * * *
-// Od razu uruchom po starcie
+// Uruchom generowanie danych od razu po starcie
 generateQiMenData();
 
+// Zaplanuj cykliczną aktualizację co 2 godziny (0 minut, co 2 godziny)
 cron.schedule("0 */2 * * *", () => {
   console.log("Aktualizacja danych QiMen...");
   generateQiMenData();
