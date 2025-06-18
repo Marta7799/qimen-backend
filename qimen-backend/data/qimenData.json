@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-06-17T10:00:00Z",
+  "cells": [
+    {
+      "position": 1,
+      "heavenlyStem": "Jia",
+      "earthlyBranch": "Zi",
+      "deity": "White Tiger",
+      "door": "Open",
+      "star": "Tian Xin",
+      "element": "Metal",
+      "energy": "positive"
+    },
+    {
+      "position": 2,
+      "heavenlyStem": "Yi",
+      "earthlyBranch": "Chou",
+      "deity": "Black Tortoise",
+      "door": "Rest",
+      "star": "Tian Rui",
+      "element": "Water",
+      "energy": "neutral"
+    },
+    {
+      "position": 3,
+      "heavenlyStem": "Bing",
+      "earthlyBranch": "Yin",
+      "deity": "Nine Heaven",
+      "door": "Life",
+      "star": "Tian Chong",
+      "element": "Wood",
+      "energy": "positive"
+    },
+    {
+      "position": 4,
+      "heavenlyStem": "Ding",
+      "earthlyBranch": "Mao",
+      "deity": "Nine Earth",
+      "door": "Harm",
+      "star": "Tian Fu",
+      "element": "Wood",
+      "energy": "negative"
+    },
+    {
+      "position": 5,
+      "heavenlyStem": "Wu",
+      "earthlyBranch": "Chen",
+      "deity": "Six Harmony",
+      "door": "Delusion",
+      "star": "Tian Ying",
+      "element": "Earth",
+      "energy": "neutral"
+    },
+    {
+      "position": 6,
+      "heavenlyStem": "Ji",
+      "earthlyBranch": "Si",
+      "deity": "Chief",
+      "door": "Scene",
+      "star": "Tian Peng",
+      "element": "Fire",
+      "energy": "positive"
+    },
+    {
+      "position": 7,
+      "heavenlyStem": "Geng",
+      "earthlyBranch": "Wu",
+      "deity": "Snake",
+      "door": "Death",
+      "star": "Tian Ren",
+      "element": "Metal",
+      "energy": "negative"
+    },
+    {
+      "position": 8,
+      "heavenlyStem": "Xin",
+      "earthlyBranch": "Wei",
+      "deity": "Moon",
+      "door": "Fear",
+      "star": "Tian Zhu",
+      "element": "Earth",
+      "energy": "negative"
+    },
+    {
+      "position": 9,
+      "heavenlyStem": "Ren",
+      "earthlyBranch": "Shen",
+      "deity": "Sun",
+      "door": "Injury",
+      "star": "Tian Ji",
+      "element": "Fire",
+      "energy": "neutral"
+    }
+  ]
+}
