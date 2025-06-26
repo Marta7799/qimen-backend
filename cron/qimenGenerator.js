@@ -7,55 +7,53 @@ import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Dodaj losowe wartości
+const stars = [
+  "天蓬",
+  "天任",
+  "天冲",
+  "天辅",
+  "天英",
+  "天禽",
+  "天柱",
+  "天心",
+  "天芮",
+];
+const gates = ["开", "休", "生", "伤", "杜", "景", "死", "惊"];
+const spirits = [
+  "太陰",
+  "六合",
+  "螣蛇",
+  "白虎",
+  "玄武",
+  "勾陳",
+  "直符",
+  "天心",
+];
+
+function getRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 export default function generateQiMenData() {
   const now = new Date();
-
-  // Przykładowe dane QiMen – możesz je rozszerzyć później
-  const stars = [
-    "天蓬",
-    "天任",
-    "天冲",
-    "天辅",
-    "天英",
-    "天芮",
-    "天柱",
-    "天心",
-    "天禽",
-  ];
-  const gates = ["休", "生", "伤", "杜", "景", "死", "惊", "开"];
-  const spirits = [
-    "白虎",
-    "螣蛇",
-    "勾陳",
-    "六合",
-    "太陰",
-    "玄武",
-    "直符",
-    "天心",
-  ];
-
-  const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
   const cells = Array(9)
     .fill()
     .map((_, i) => {
-      const spirit = getRandom(spirits);
       const star = getRandom(stars);
       const gate = getRandom(gates);
-
-      const symbols = [star, spirit, gate]; // lub dowolna logika kolejności
+      const spirit = getRandom(spirits);
 
       return {
         id: i,
         energyType: ["wood", "fire", "earth", "metal", "water"][i % 5],
         star,
         gate,
-        spirit, // <--- DODANE!
-        symbols,
+        spirit,
+        symbols: [star, spirit, gate],
       };
     });
-
-  console.log("DEBUG - cells:", cells);
 
   const data = {
     generatedAt: now.toISOString(),
