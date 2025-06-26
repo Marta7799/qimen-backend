@@ -55,6 +55,8 @@ export default function generateQiMenData() {
       };
     });
 
+  console.log("DEBUG - cells:", cells);
+
   const data = {
     generatedAt: now.toISOString(),
     cells,
