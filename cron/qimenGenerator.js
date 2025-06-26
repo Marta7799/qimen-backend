@@ -20,7 +20,7 @@ const stars = [
   "天芮",
 ];
 const gates = ["开", "休", "生", "伤", "杜", "景", "死", "惊"];
-const spirits = [
+const deities = [
   "太陰",
   "六合",
   "螣蛇",
@@ -43,15 +43,16 @@ export default function generateQiMenData() {
     .map((_, i) => {
       const star = getRandom(stars);
       const gate = getRandom(gates);
-      const spirit = getRandom(spirits);
+      const deity = getRandom(deities);
 
       return {
         id: i,
+        position: i + 1,
         energyType: ["wood", "fire", "earth", "metal", "water"][i % 5],
         star,
         gate,
-        spirit,
-        symbols: [star, spirit, gate],
+        deity,
+        symbols: [star, deity, gate],
       };
     });
 
