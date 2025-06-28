@@ -1,95 +1,86 @@
 {
-  "timestamp": "2025-06-17T10:00:00Z",
+  "generatedAt": "2025-06-28T14:00:00.058Z",
   "cells": [
     {
+      "id": 0,
       "position": 1,
-      "heavenlyStem": "Jia",
-      "earthlyBranch": "Zi",
-      "deity": "White Tiger",
-      "door": "Open",
-      "star": "Tian Xin",
-      "element": "Metal",
-      "energy": "positive"
+      "energyType": "wood",
+      "star": "天禽",
+      "gate": "杜",
+      "deity": "白虎",
+      "symbols": ["天禽", "白虎", "杜"]
     },
     {
+      "id": 1,
       "position": 2,
-      "heavenlyStem": "Yi",
-      "earthlyBranch": "Chou",
-      "deity": "Black Tortoise",
-      "door": "Rest",
-      "star": "Tian Rui",
-      "element": "Water",
-      "energy": "neutral"
+      "energyType": "fire",
+      "star": "天蓬",
+      "gate": "惊",
+      "deity": "勾陳",
+      "symbols": ["天蓬", "勾陳", "惊"]
     },
     {
+      "id": 2,
       "position": 3,
-      "heavenlyStem": "Bing",
-      "earthlyBranch": "Yin",
-      "deity": "Nine Heaven",
-      "door": "Life",
-      "star": "Tian Chong",
-      "element": "Wood",
-      "energy": "positive"
+      "energyType": "earth",
+      "star": "天辅",
+      "gate": "景",
+      "deity": "螣蛇",
+      "symbols": ["天辅", "螣蛇", "景"]
     },
     {
+      "id": 3,
       "position": 4,
-      "heavenlyStem": "Ding",
-      "earthlyBranch": "Mao",
-      "deity": "Nine Earth",
-      "door": "Harm",
-      "star": "Tian Fu",
-      "element": "Wood",
-      "energy": "negative"
+      "energyType": "metal",
+      "star": "天辅",
+      "gate": "杜",
+      "deity": "太陰",
+      "symbols": ["天辅", "太陰", "杜"]
     },
     {
+      "id": 4,
       "position": 5,
-      "heavenlyStem": "Wu",
-      "earthlyBranch": "Chen",
-      "deity": "Six Harmony",
-      "door": "Delusion",
-      "star": "Tian Ying",
-      "element": "Earth",
-      "energy": "neutral"
+      "energyType": "water",
+      "star": "天冲",
+      "gate": "杜",
+      "deity": "螣蛇",
+      "symbols": ["天冲", "螣蛇", "杜"]
     },
     {
+      "id": 5,
       "position": 6,
-      "heavenlyStem": "Ji",
-      "earthlyBranch": "Si",
-      "deity": "Chief",
-      "door": "Scene",
-      "star": "Tian Peng",
-      "element": "Fire",
-      "energy": "positive"
+      "energyType": "wood",
+      "star": "天禽",
+      "gate": "景",
+      "deity": "螣蛇",
+      "symbols": ["天禽", "螣蛇", "景"]
     },
     {
+      "id": 6,
       "position": 7,
-      "heavenlyStem": "Geng",
-      "earthlyBranch": "Wu",
-      "deity": "Snake",
-      "door": "Death",
-      "star": "Tian Ren",
-      "element": "Metal",
-      "energy": "negative"
+      "energyType": "fire",
+      "star": "天英",
+      "gate": "死",
+      "deity": "螣蛇",
+      "symbols": ["天英", "螣蛇", "死"]
     },
     {
+      "id": 7,
       "position": 8,
-      "heavenlyStem": "Xin",
-      "earthlyBranch": "Wei",
-      "deity": "Moon",
-      "door": "Fear",
-      "star": "Tian Zhu",
-      "element": "Earth",
-      "energy": "negative"
+      "energyType": "earth",
+      "star": "天英",
+      "gate": "惊",
+      "deity": "螣蛇",
+      "symbols": ["天英", "螣蛇", "惊"]
     },
     {
+      "id": 8,
       "position": 9,
-      "heavenlyStem": "Ren",
-      "earthlyBranch": "Shen",
-      "deity": "Sun",
-      "door": "Injury",
-      "star": "Tian Ji",
-      "element": "Fire",
-      "energy": "neutral"
+      "energyType": "metal",
+      "star": "天禽",
+      "gate": "休",
+      "deity": "直符",
+      "symbols": ["天禽", "直符", "休"]
     }
   ]
 }
