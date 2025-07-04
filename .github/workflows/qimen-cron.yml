@@ -1,0 +1,33 @@
+name: Generate QiMen Data
+
+on:
+  schedule:
+    - cron: "0 */2 * * *" # Co 2 godziny
+  workflow_dispatch: # Możliwość ręcznego uruchomienia
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run QiMen Generator
+        run: node cron/qimenGenerator.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/qimenData.json
+          git commit -m "🔄 Auto-update QiMen data"
+          git push

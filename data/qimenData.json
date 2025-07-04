@@ -1,86 +1,122 @@
 {
-  "generatedAt": "2025-06-28T14:00:00.058Z",
+  "generatedAt": "2025-07-04T16:00:00.110Z",
   "cells": [
     {
       "id": 0,
       "position": 1,
       "energyType": "wood",
-      "star": "天禽",
-      "gate": "杜",
-      "deity": "白虎",
-      "symbols": ["天禽", "白虎", "杜"]
+      "star": "天辅",
+      "gate": "死",
+      "deity": "玄武",
+      "symbols": [
+        "天辅",
+        "玄武",
+        "死"
+      ]
     },
     {
       "id": 1,
       "position": 2,
       "energyType": "fire",
-      "star": "天蓬",
-      "gate": "惊",
-      "deity": "勾陳",
-      "symbols": ["天蓬", "勾陳", "惊"]
+      "star": "天禽",
+      "gate": "伤",
+      "deity": "螣蛇",
+      "symbols": [
+        "天禽",
+        "螣蛇",
+        "伤"
+      ]
     },
     {
       "id": 2,
       "position": 3,
       "energyType": "earth",
-      "star": "天辅",
-      "gate": "景",
-      "deity": "螣蛇",
-      "symbols": ["天辅", "螣蛇", "景"]
+      "star": "天禽",
+      "gate": "生",
+      "deity": "太陰",
+      "symbols": [
+        "天禽",
+        "太陰",
+        "生"
+      ]
     },
     {
       "id": 3,
       "position": 4,
       "energyType": "metal",
-      "star": "天辅",
-      "gate": "杜",
+      "star": "天柱",
+      "gate": "生",
       "deity": "太陰",
-      "symbols": ["天辅", "太陰", "杜"]
+      "symbols": [
+        "天柱",
+        "太陰",
+        "生"
+      ]
     },
     {
       "id": 4,
       "position": 5,
       "energyType": "water",
-      "star": "天冲",
-      "gate": "杜",
-      "deity": "螣蛇",
-      "symbols": ["天冲", "螣蛇", "杜"]
+      "star": "天英",
+      "gate": "惊",
+      "deity": "六合",
+      "symbols": [
+        "天英",
+        "六合",
+        "惊"
+      ]
     },
     {
       "id": 5,
       "position": 6,
       "energyType": "wood",
-      "star": "天禽",
-      "gate": "景",
-      "deity": "螣蛇",
-      "symbols": ["天禽", "螣蛇", "景"]
+      "star": "天蓬",
+      "gate": "杜",
+      "deity": "太陰",
+      "symbols": [
+        "天蓬",
+        "太陰",
+        "杜"
+      ]
     },
     {
       "id": 6,
       "position": 7,
       "energyType": "fire",
       "star": "天英",
-      "gate": "死",
-      "deity": "螣蛇",
-      "symbols": ["天英", "螣蛇", "死"]
+      "gate": "生",
+      "deity": "玄武",
+      "symbols": [
+        "天英",
+        "玄武",
+        "生"
+      ]
     },
     {
       "id": 7,
       "position": 8,
       "energyType": "earth",
-      "star": "天英",
-      "gate": "惊",
-      "deity": "螣蛇",
-      "symbols": ["天英", "螣蛇", "惊"]
+      "star": "天任",
+      "gate": "景",
+      "deity": "玄武",
+      "symbols": [
+        "天任",
+        "玄武",
+        "景"
+      ]
     },
     {
       "id": 8,
       "position": 9,
       "energyType": "metal",
-      "star": "天禽",
-      "gate": "休",
-      "deity": "直符",
-      "symbols": ["天禽", "直符", "休"]
+      "star": "天冲",
+      "gate": "伤",
+      "deity": "勾陳",
+      "symbols": [
+        "天冲",
+        "勾陳",
+        "伤"
+      ]
     }
   ]
 }
