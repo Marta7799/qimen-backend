@@ -24,10 +24,11 @@ jobs:
       - name: Run QiMen Generator
         run: node cron/qimenGenerator.js
 
-      - name: Commit and push changes
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff
           git add data/qimenData.json
-          git commit -m "🔄 Auto-update QiMen data"
+          git commit -m "Update QiMen data" || echo "No changes to commit"
           git push
