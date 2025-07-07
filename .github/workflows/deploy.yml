@@ -24,5 +24,5 @@ jobs:
       - name: Commit and Push
         run: |
           git add .
-          git commit -m "Auto update from GitHub Actions"
+          git commit -m "Auto update from GitHub Actions" || echo "No changes"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Marta7799/qimen-backend.git HEAD:main
