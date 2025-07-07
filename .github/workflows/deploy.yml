@@ -25,5 +25,4 @@ jobs:
         run: |
           git add .
           git commit -m "Auto update from GitHub Actions" || echo "No changes"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/Marta7799/qimen-backend.git
-          git push origin HEAD:main
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Marta7799/qimen-backend.git HEAD:main
