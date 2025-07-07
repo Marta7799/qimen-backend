@@ -18,11 +18,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Make some changes (example)
+      - name: Make changes (example)
         run: echo "// Auto update" >> README.md
 
       - name: Commit and Push
         run: |
           git add .
-          git commit -m "Auto update from GitHub Actions" || echo "No changes"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Marta7799/qimen-backend.git HEAD:main
+          git commit -m "Auto update from GitHub Actions" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main

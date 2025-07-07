@@ -3,7 +3,7 @@ name: Generate QiMen Data
 on:
   schedule:
     - cron: "0 */2 * * *" # Co 2 godziny
-  workflow_dispatch: # Możliwość ręcznego uruchomienia
+  workflow_dispatch: # Można też uruchomić ręcznie
 
 jobs:
   generate:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
@@ -24,11 +24,10 @@ jobs:
       - name: Run QiMen Generator
         run: node cron/qimenGenerator.js
 
-      - name: Commit changes
+      - name: Commit QiMen data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff
           git add data/qimenData.json
           git commit -m "Update QiMen data" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Marta7799/qimen-backend.git HEAD:main
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
